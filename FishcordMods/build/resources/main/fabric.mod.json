@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "fishcordmods",
+  "version": "1.0-SNAPSHOT",
+  "name": "FishcordMods",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/fishcordmods/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "Fishcord.fishcordmods.client.FishcordmodsDataGenerator"
+    ],
+    "client": [
+      "Fishcord.fishcordmods.client.FishcordmodsClient"
+    ],
+    "main": [
+      "Fishcord.fishcordmods.Fishcordmods"
+    ]
+  },
+  "mixins": [
+    "fishcordmods.mixins.json",
+    {
+      "config": "fishcordmods.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "fabric": "*",
+    "minecraft": "1.21.8"
+  }
+}
