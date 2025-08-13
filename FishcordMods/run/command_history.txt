@@ -1,0 +1,16 @@
+/give @s fishcordmods:custom_item
+/seed
+/give @s fishcordmods:boombox
+/gamemode survival
+/gamemode creative
+/give @s fishcordmods:boombox
+/time set night
+/time set day
+/gamerule doDaylightCycle false
+/time set 7000
+/time set 10000
+/time set 11000
+/time set 13000
+/time set 12000
+/time set 12500
+/time set 10000

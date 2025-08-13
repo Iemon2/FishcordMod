@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "fishcordmods:block/boombox", "uvlock": false },
+    "facing=east": { "model": "fishcordmods:block/boombox", "y": 90 , "uvlock": false },
+    "facing=south": { "model": "fishcordmods:block/boombox", "y": 180 , "uvlock": false },
+    "facing=west": { "model": "fishcordmods:block/boombox", "y": 270 , "uvlock": false }
+  }
+}
