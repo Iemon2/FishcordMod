@@ -1,0 +1,41 @@
+/setblock ~ ~ ~ glostermod:fish_log
+/give @s glostermod:fish_log.json
+/give @s glostermod:fish_log
+/give @s glostermod:fish_wood
+/gamemode survival
+/give @s glostermod:fish_log 64
+/gamemode creative
+/tp @s @r[type=item]
+/give @s glostermod:fish_planks
+/time set night
+/gamerule doDaylightCycle
+/gamerule doDaylightCycle false
+/time set 1300
+/time set 1700
+/time set 2400
+/time set 1000
+/time set 100
+/give @s glostermod:fish_log
+/give @s glostermod:fish_wood
+/gamemode survival
+/give @s minecraft:diamond_axe
+/gamemode creative
+/gamemode survival
+/enchant @s minecraft:efficiency 5
+/give @s glostermod:fish_log
+/give @s glostermod:fish_stairs
+/gamemode creative
+/fill ~ ~ ~ ~-100 ~100 ~ glass
+/fill ~ ~ ~ ~-100 ~100 ~ air
+/fill ~ ~ ~ ~-100 ~ ~100 air
+/fill ~ ~ ~ ~-100 ~ ~-100 glass
+/give @s minecraft:command_block
+/give @s glostermod:fish_stairs
+/give @s glostermod:nyan_fish
+/effect clear
+/tick freeze
+/tick unfreeze
+/effect clear
+/tick sprint 1000000
+/tick sprint stop
+/tick rate 40

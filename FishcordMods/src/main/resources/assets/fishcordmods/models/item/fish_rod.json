@@ -1,0 +1,7 @@
+{
+  "parent": "item/fishing_rod",
+  "texture_size": [36, 18],
+  "textures": {
+    "layer0": "fishcordmods:item/fish_rod"
+  }
+}

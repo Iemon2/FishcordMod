@@ -21,7 +21,7 @@ import static net.minecraft.item.Items.register;
 public class ModItems {
 
 
-    public static final Item BOOMBOX = register(
+    public static final Item BOOMBOX = Items.register(
             ModBlocks.BOOMBOX,
             (UnaryOperator<Item.Settings>)(settings -> Waypoint.disableTracking(settings)
                     .component(
@@ -30,11 +30,17 @@ public class ModItems {
                     ))
     );
 
+    public static final Item FISH_ROD = registerItem(
+            "fish_rod",
+            FishRodItem::new,
+            new Item.Settings().enchantable(1)
+    );
+
     public static Item registerItem(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {
         final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Fishcordmods.MOD_ID, name));
         return Items.register(registryKey, factory, settings);
     }
-    public static void registerModItems() {
+    public static void initialize() {
 
     }
 

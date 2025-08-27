@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "glostermod:block/fish_log",
+    "side": "glostermod:block/fish_log"
+  }
+}

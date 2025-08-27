@@ -1,0 +1,7 @@
+{
+  "parent": "block",
+  "textures": {
+    "all": "glostermod:block/fish_log"
+  }
+}
+

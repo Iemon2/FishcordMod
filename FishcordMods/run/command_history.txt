@@ -14,3 +14,6 @@
 /time set 12000
 /time set 12500
 /time set 10000
+/give @s minecraft:fish_rod
+/give @s fishcordmods:fish_rod
+/give @s minecraft:fishing_rod

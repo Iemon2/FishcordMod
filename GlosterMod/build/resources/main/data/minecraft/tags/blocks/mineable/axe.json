@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "glostermod:block/fish_log",
+    "glostermod:block/fish_wood",
+    "glostermod:block/fish_planks"
+  ]
+}

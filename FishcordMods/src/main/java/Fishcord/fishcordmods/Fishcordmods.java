@@ -12,7 +12,7 @@ public class Fishcordmods implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        ModItems.registerModItems();
+        ModItems.initialize();
         ModBlocks.init();
     }
 }

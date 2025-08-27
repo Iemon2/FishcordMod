@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "glostermod",
+  "version": "${version}",
+  "name": "GlosterMod",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/glostermod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "Fishcord.glostermod.client.GlostermodDataGenerator"
+    ],
+    "client": [
+      "Fishcord.glostermod.client.GlostermodClient"
+    ],
+    "main": [
+      "Fishcord.glostermod.Glostermod"
+    ]
+  },
+  "mixins": [
+    "glostermod.mixins.json",
+    {
+      "config": "glostermod.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
