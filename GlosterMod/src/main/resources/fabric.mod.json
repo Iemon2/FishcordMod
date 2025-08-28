@@ -18,6 +18,9 @@
     ],
     "main": [
       "Fishcord.glostermod.Glostermod"
+    ],
+    "terrablender": [
+      "Fishcord.glostermod.world.biome.ModTerraBlenderAPI"
     ]
   },
   "mixins": [

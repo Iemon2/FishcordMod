@@ -1,22 +1,3 @@
-/setblock ~ ~ ~ glostermod:fish_log
-/give @s glostermod:fish_log.json
-/give @s glostermod:fish_log
-/give @s glostermod:fish_wood
-/gamemode survival
-/give @s glostermod:fish_log 64
-/gamemode creative
-/tp @s @r[type=item]
-/give @s glostermod:fish_planks
-/time set night
-/gamerule doDaylightCycle
-/gamerule doDaylightCycle false
-/time set 1300
-/time set 1700
-/time set 2400
-/time set 1000
-/time set 100
-/give @s glostermod:fish_log
-/give @s glostermod:fish_wood
 /gamemode survival
 /give @s minecraft:diamond_axe
 /gamemode creative
@@ -39,3 +20,31 @@
 /tick sprint 1000000
 /tick sprint stop
 /tick rate 40
+/loot give @s fish minecraft:gameplay/fishing/treasure
+/loot give @s fish minecraft:gameplay/fishing/treasure ~ ~ ~ minecraft:fishing_rod
+/loot give @s fish minecraft:gameplay/fishing/junk ~ ~ ~ minecraft:fishing_rod
+/loot give @s fish minecraft:gameplay/fishing/junk ~ ~ ~ minecraft:fishing_rod\
+/loot give @s fish minecraft:gameplay/fishing/junk ~ ~ ~ minecraft:fishing_rod
+/loot give @s fish minecraft:gameplay/fishing/junk ~ ~ ~ minecraft:fishing_rod/
+/loot give @s fish minecraft:gameplay/fishing/junk ~ ~ ~ minecraft:fishing_rod
+/clear
+/loot give @s fish minecraft:gameplay/fishing/junk ~ ~ ~ minecraft:fishing_rod
+/clear
+/gamemode survival
+/clear
+/locate biome minecraft:forest
+/tp @s 177 95 721
+/gamemode creative
+/locate biome minecraft:forest
+/tp @s 10 143 -165
+/locate biome minecraft:forest
+/tp @s 0 88 -4
+/locate biome minecraft:forest
+/tp @s 219 123 -33
+/locate biome minecraft:forest
+/tp @s -36 105 7
+/setblock ~ ~ ~ light
+/locate biome minecraft:forest
+/tp @s 16 69 -7
+/locate biome glostermod:fish_biome
+/locate biome terrablender:deferred_placeholder

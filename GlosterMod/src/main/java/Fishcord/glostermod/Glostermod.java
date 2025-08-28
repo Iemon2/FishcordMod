@@ -2,6 +2,8 @@ package Fishcord.glostermod;
 
 import Fishcord.glostermod.block.ModBlocks;
 import Fishcord.glostermod.item.ModItems;
+import Fishcord.glostermod.util.ModLootTableModifiers;
+import Fishcord.glostermod.world.biome.ModBiomes;
 import net.fabricmc.api.ModInitializer;
 import java.util.logging.LogManager;
 
@@ -15,5 +17,7 @@ public class Glostermod implements ModInitializer {
     public void onInitialize() {
         ModBlocks.init();
         ModItems.init();
+        ModLootTableModifiers.init();
+        ModBiomes.init();
     }
 }

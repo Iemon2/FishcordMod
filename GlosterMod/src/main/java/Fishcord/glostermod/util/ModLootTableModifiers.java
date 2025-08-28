@@ -8,6 +8,7 @@ import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
+import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
 
 public class ModLootTableModifiers {
@@ -20,9 +21,9 @@ public class ModLootTableModifiers {
             if(JUNK_TABLE_ID.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(1F))
+                        .conditionally(RandomChanceLootCondition.builder(0.5F))
                         .with(ItemEntry.builder(ModItems.NYAN_FISH))
-                        .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
             }
@@ -30,4 +31,6 @@ public class ModLootTableModifiers {
 
         }));
     }
+
+    public static void init() {}
 }
